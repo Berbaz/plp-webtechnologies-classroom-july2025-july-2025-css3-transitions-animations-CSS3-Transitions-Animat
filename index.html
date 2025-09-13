@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech-Themed Interactive Animations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+
+  <h1>⚡ Tech-Themed Interactive Animations</h1>
+
+  <!-- Part 1 -->
+  <section class="card glass">
+    <h2>Part 1: CSS Transitions & Animations</h2>
+    <button class="btn" id="hoverBtn">Hover Me</button>
+    <div class="hover-preview" id="hoverPreview">👋 Hover detected!</div>
+    <div class="fade-box"></div>
+    <div class="spinner"></div>
+  </section>
+
+  <!-- Part 2 -->
+  <section class="card glass">
+    <h2>Part 2: JavaScript Functions</h2>
+    <div class="btn-row">
+      <button onclick="changeBoxColor()">Change Color</button>
+      <button onclick="scaleBox(1.2)">Scale Up</button>
+      <button onclick="scaleBox(0.8)">Scale Down</button>
+      <button onclick="toggleBox()">Toggle Visibility</button>
+      <button onclick="alertArea(5, 10)">Calculate Area</button>
+    </div>
+    <div class="box" id="box"></div>
+  </section>
+
+  <!-- Part 3 -->
+  <section class="card glass">
+    <h2>Part 3: CSS + JavaScript Integration</h2>
+    <button onclick="animateBox()">Bounce Box</button>
+    <div class="box" id="bounceBox"></div>
+
+    <div class="card-flip" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">Front</div>
+        <div class="card-back">Back</div>
+      </div>
+    </div>
+
+    <button onclick="toggleSpinner()">Toggle Loading</button>
+    <div class="spinner" id="loadingSpinner"></div>
+
+    <button onclick="toggleModal()">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h3>💡 Modal Popup</h3>
+        <p>This modal has a futuristic zoom effect!</p>
+        <button onclick="toggleModal()">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
